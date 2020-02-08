@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "DuckDuckGo Safe",
+    "description": "Search DuckDuckGo with strict safe search enabled and no visible option to disable it.",
+    "version": "1.0.2",
+    "omnibox": {"keyword": "ddg"},
+    "icons": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "browser_specific_settings": {
+	"gecko": {
+	    "strict_min_version": "65.0"
+	}
+    },
+    "chrome_settings_overrides": {
+	"search_provider": {
+	    "name": "DuckDuckGo Safe",
+	    "search_url": "https://safe.duckduckgo.com/?q={searchTerms}",
+	    "suggest_url": "https://safe.duckduckgo.com/ac/?q={searchTerms}&type=list",
+	    "favicon_url": "https://safe.duckduckgo.com/favicon.ico",
+	    "is_default": true,
+	    "encoding": "UTF-8"
+	}
+    }
+}
